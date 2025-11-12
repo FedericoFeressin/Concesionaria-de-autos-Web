@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Ejemplo de datos para cada coche
     "alaskan": {
       title: "Renault Alaskan 2.3 Dci 4x4 Confort",
-      image: "/Autos/car4.png",
+      image: "Autos/car4.png",
       description: "Color Negro, 4 puertas, Transmisión manual.",
       price: "$65,000",
       financing: "Hasta 60 meses con 10% de enganche",
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     "GAC EMPOW": {
       title: "GAC EMPOW",
-      image: "/Autos/car5.png",
+      image: "Autos/car5.png",
       description: "Color Shiny Fighter Green, Megastar chasis.",
       price: "$35,000",
       financing: "Hasta 60 meses con 10% de enganche",
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     "Swift Booster Green": {
       title: "Suzuki Swift",
-      image: "/Autos/Suzuki Swift.png",
+      image: "Autos/Suzuki Swift.png",
       description: "Transmision 6 velocidades.",
       price: "$15,000",
       financing: "Hasta 60 meses con 10% de enganche",
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     "Chevrolet": {
       title: "Chevrolet Camaro",
-      image: "/Autos/car14.png",
+      image: "Autos/car14.png",
       description: "Chevrolet Camaro v8 ss deportivo.",
       price: "$45,000",
       financing: "Hasta 60 meses con 10% de enganche",
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     "Volkswagen Beetle": {
       title: "Volkswagen Beetle Usado",
-      image: "/Autos/car15.png",
+      image: "Autos/car15.png",
       description: "Cupé o descapotable de 2 puertas.",
       price: "$18,000",
       financing: "Hasta 48 meses con 15% de enganche",
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     "Chevrolet Cruze": {
       title: "Chevrolet Cruze",
-      image: "/Autos/car7.png",
+      image: "Autos/car7.png",
       description: "Chevrolet Cruze v8 ss deportivo.",
       price: "$25,000",
       financing: "Hasta 60 meses con 10% de enganche",
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     "Ford Mustang": {
       title: "Ford Mustang",
-      image: "/Autos/Ford Mustang.png",
+      image: "Autos/Ford Mustang.png",
       description: "Deportivo americano clásico.",
       price: "$55,000",
       financing: "Hasta 48 meses con 15% de enganche",
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     "New Grand Lion 4x4": {
       title: "New Grand Lion 4x4",
-      image: "/Autos/car9.png",
+      image: "Autos/car9.png",
       description: "Camioneta 4x4 de 4 Puertas.",
       price: "$55,000",
       financing: "Hasta 48 meses con 15% de enganche",
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     "VolksWagen Polo": {
       title: "VolksWagen Polo",
-      image: "/Autos/Volswagen polo.png",
+      image: "Autos/Volswagen polo.png",
       description: "Automóvil compacto de 4 puertas.",
       price: "$25,000",
       financing: "Hasta 48 meses con 15% de enganche",
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     "Lada granta": {
       title: "Lada granta",
-      image: "/Autos/Lada granta.png",
+      image: "Autos/Lada granta.png",
       description: "Automóvil compacto de 4 puertas.",
       price: "$25,000",
       financing: "Hasta 24 meses con 5% de enganche",
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     "Toyota Premio": {
       title: "Toyota Premio",
-      image: "/Autos/Toyota Premio.png",
+      image: "Autos/Toyota Premio.png",
       description: "Automático, 4 puertas, color plata.",
       price: "$25,000",
       financing: "Hasta 48 meses con 15% de enganche",
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     "Fiat Tipo Station": {
       title: "Fiat Tipo Station",
-      image: "/Autos/Fiat Tipo Station.png",
+      image: "Autos/Fiat Tipo Station.png",
       description: "4 puertas, color plata.",
       price: "$25,000",
       financing: "Hasta 48 meses con 15% de enganche",
