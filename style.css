@@ -1,0 +1,1491 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans+Runic&display=swap');
+
+/*Selector universal, aplica los estilos definidos a todos los elementos*/
+* {
+    font-family: 'Noto Sans Runic', sans-serif;
+    /* Fuente para todo el sitio */
+    font-size: 13px;
+    /* Tamaño de fuente base */
+    margin: 0;
+    /* Margen cero */
+    padding: 0;
+    /* Relleno cero */
+    box-sizing: border-box;
+    /* Cambia el modelo de caja para incluir el padding y el borde en el ancho y alto total del elemento */
+    scroll-behavior: smooth;
+    /* Desplazamiento suave */
+}
+
+
+
+/*Fondo de la pagina*/
+body {
+
+    background-image: url('/Imagenes/Fondo 4.jpg');
+    /* Imagen de fondo */
+    background-size: cover;
+    /* Ajusta la imagen al tamaño de la pantalla */
+    background-repeat: no-repeat;
+    /* No repetir la imagen */
+    background-attachment: fixed;
+    /* Fondo fijo */
+
+    background-position: center;
+    /* Centra la imagen de fondo */
+
+}
+
+
+/*-----------------------Barra Menu------------------*/
+
+/* Barra de navegación */
+.Barra_Button a {
+
+    position: relative;
+    /* Posición relativa */
+    font-size: 26px;
+    /* Tamaño de la fuente */
+    color: #fff;
+    /* Color del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    font-weight: 300;
+    /* Peso de la fuente */
+    margin-right: 30px;
+    /* Espacio entre los enlaces */
+    text-transform: none;
+    /* Sin mayúsculas */
+
+}
+
+/*barramenu*/
+.Barra_Menu {
+
+    position: sticky;
+    /* Pegado a la parte superior */
+    top: 0;
+    /* Pegado a la parte superior */
+    left: 0;
+    /* Alineado a la izquierda */
+    width: 100%;
+    /* Ancho completo */
+    padding: 1rem;
+    /* Espacio interno */
+    background: transparent;
+    /* Fondo transparente */
+    display: flex;
+    /* Utiliza el modelo de caja flexible */
+    justify-content: space-between;
+    /* Espacio entre elementos */
+    align-items: center;
+    /* Alinear verticalmente */
+    z-index: 1000;
+    /* Para que esté por encima de otros elementos */
+    border-bottom: 5px solid rgba(5, 49, 207, 0.568);
+    /* Borde inferior visible */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Sombra suave */
+    background: #1f1f2081;
+    /* Fondo semitransparente */
+    backdrop-filter: blur(10px);
+    /* Efecto de desenfoque */
+    animation: slideBottom 1s ease forwards;
+    /*Animacion de aparicion desde abajo al cargar*/
+
+}
+
+/*Efecto de la barra de navegacion*/
+.Barra_Button a::after {
+
+    content: '';
+    /* Contenido vacío */
+    position: absolute;
+    /* Posición absoluta */
+    left: 0;
+    /* Alineado a la izquierda */
+    bottom: -6px;
+    /* Espacio entre el texto y el borde */
+    width: 100%;
+    /* Ancho del borde */
+    height: 3px;
+    /* Espacio entre el texto y el borde */
+    background: #4169f8;
+    /* Color del borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    transform: translateY(5px);
+    /* Desplazamiento */
+    transition: .5s;
+    /* Transición suave */
+    opacity: 0;
+    /* Opacidad inicial */
+
+}
+
+/*Efecto de los botones de la barra menu*/
+.Barra_Button a:hover::after {
+
+    transform: translateY(0);
+    /* Desplazamiento */
+    opacity: 1;
+    /* Opacidad */
+
+}
+
+/*Logo Premium Quality*/
+.Barra_Logo {
+
+    font-size: 25px;
+    /* Tamaño de la fuente */
+    color: #fff;
+    /* Color del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    font-weight: 300;
+    /* Peso de la fuente */
+    opacity: 0;
+    /* Opacidad inicial */
+    animation: slideRight 1s ease forwards;
+    /*Animacion de aparicion desde la derecha al cargar*/
+
+}
+
+/*efecto del logo*/
+.Barra_Logo::after {
+
+    content: '';
+    /* Contenido vacío */
+    position: absolute;
+    /* Posición absoluta */
+    left: 0;
+    /* Alineado a la izquierda */
+    bottom: -6px;
+    /* Espacio entre el texto y el borde */
+    width: 100%;
+    /* Ancho del borde */
+    height: 3px;
+    /* Espacio entre el texto y el borde */
+    background: #4169f8;
+    /* Color del borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    transform: translateY(5px);
+    /* Desplazamiento */
+    transition: .5s;
+    /* Transición suave */
+    opacity: 0;
+    /* Opacidad inicial */
+}
+
+/*Efecto del logo*/
+.Barra_Logo:hover::after {
+
+    transform: translateY(0);
+    /* Desplazamiento */
+    opacity: 1;
+    /* Opacidad */
+
+}
+
+
+/*barra de redes sociales*/
+.Barra_Redes {
+
+    display: flex;
+    /* Utiliza el modelo de caja flexible */
+    justify-content: space-between;
+    /* Espacio entre iconos */
+    width: 150px;
+    /* Ancho de la barra */
+    height: 40px;
+    /* Altura de la barra */
+}
+
+/*barra de redes*/
+.Barra_Redes a {
+
+    display: inline-flex;
+    /* Mostrar como bloque en línea */
+    justify-content: center;
+    /* Centrar icono */
+    align-items: center;
+    /* Centrar icono */
+    width: 40px;
+    /* Ancho del icono */
+    height: 40px;
+    /* Tamaño del icono */
+    background: transparent;
+    /* Fondo transparente */
+    border: 2px solid transparent;
+    /* Borde transparente */
+    text-decoration: none;
+    /* Sin subrayado */
+    transform: rotate(45deg);
+    /* Rotación del icono */
+    transition: .5s;
+    /* Transición suave */
+    opacity: 0;
+    /* Opacidad inicial */
+    animation: slideSci 1s ease forwards;
+    /*Animacion de aparicion desde la derecha al cargar*/
+    animation-delay: calc(.2s * var(--i));
+    /* Retraso de la animación */
+
+}
+
+/*efecto de las redes sociales*/
+.Barra_Redes a:hover {
+
+    border-color: #4169f8;
+    /* Color del borde al pasar el mouse */
+
+}
+
+.Barra_Redes a i {
+
+    font-size: 24px;
+    /* Tamaño del icono */
+    color: #eaeaea;
+    /* Color del icono */
+    transform: rotate(-45deg);
+    /* Rotación del icono */
+
+}
+
+/*Texto Principal*/
+.Texto {
+
+    position: relative;
+    width: 100%;
+    /* Ancho completo */
+    height: 100vh;
+    /* Altura de la ventana */
+    display: flex;
+    /* Utiliza el modelo de caja flexible */
+    justify-content: space-between;
+    /* Espacio entre elementos */
+    align-items: center;
+    /* Alinear verticalmente */
+    padding: 50px 8% 0;
+    /* Espacio superior */
+
+}
+
+
+/*Tamaño del texto*/
+.Texto_Mensaje {
+
+    max-width: 630px;
+    /* Ancho máximo */
+
+}
+
+/*2do Texto*/
+.Texto_Mensaje h1 {
+
+    font-size: 50px;
+    /* Tamaño de la fuente */
+    line-height: 1.2;
+    /* Espaciado entre líneas */
+    opacity: 0;
+    /* Opacidad inicial */
+    animation: slideBottom 1s ease forwards;
+    /*Animacion de aparicion desde abajo al cargar*/
+    animation-delay: 1s;
+    /* Retraso de la animación */
+    color: #ffffff;
+    /* Color del texto */
+    text-shadow: #000000 5px 5px 5px;
+    /* Sombra de texto */
+    margin-left: auto;
+    /* Margen izquierdo automático para centrar */
+
+}
+
+/*3er Texto*/
+.Texto_Mensaje h3 {
+
+    font-size: 40px;
+    /* Tamaño de la fuente */
+    color: #ffffff;
+    /* Color del texto */
+    opacity: 0;
+    /* Opacidad inicial */
+    animation: slideRight 1s ease forwards;
+    /*Animacion de aparicion desde la derecha al cargar*/
+    animation-delay: 1.3s;
+    /* Retraso de la animación */
+    margin-left: auto;
+    /* Margen izquierdo automático para centrar */
+    text-shadow: #2b0d0da1 5px 5px 5px;
+    /* Sombra de texto */
+
+}
+
+/*4to Texto*/
+.Texto_Mensaje p {
+
+    font-size: 20px;
+    /* Tamaño de la fuente */
+    margin: 15px 0 30px;
+    /* Margen superior e inferior */
+    opacity: 0;
+    /* Opacidad inicial */
+    animation: slideRight 1s ease forwards;
+    /*Animacion de aparicion desde la derecha al cargar*/
+    animation-delay: 1.6s;
+    /* Retraso de la animación */
+    color: #ffffff;
+    /* Color del texto */
+    text-shadow: #0000004d 5px 5px 5px;
+    /* Sombra de texto */
+    margin-left: auto;
+    /* Margen izquierdo automático para centrar */
+
+}
+
+/*Boton Explorar*/
+.btn {
+
+    display: inline-block;
+    /* Mostrar como bloque en línea */
+    padding: 10px 28px;
+    /* Espaciado interno */
+    background: #1743e3;
+    /* Color de fondo */
+    border: 2px solid #1743e3;
+    /* Borde */
+    border-radius: 6px;
+    /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    /* Sombra */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    color: #eaeaea;
+    /* Color del texto */
+    letter-spacing: 1px;
+    /* Espaciado entre letras */
+    text-decoration: none;
+    /* Sin subrayado */
+    font-weight: 600;
+    /* Peso de la fuente */
+    transition: .5s;
+    /* Transición suave */
+    opacity: 0;
+    /* Opacidad inicial */
+    animation: slideTop 1s ease forwards;
+    /*Animacion de aparicion desde arriba al cargar*/
+    animation-delay: 2s;
+    /* Retraso de la animación */
+
+}
+
+/*Efecto BTN Explorar*/
+.btn:hover {
+
+    background: #011385;
+    /* Color de fondo al pasar el mouse */
+
+}
+
+
+
+
+/*------------------------Fondo del Inicio----------------*/
+.catalogo {
+
+    padding: 40px;
+    /* Espacio alrededor del catálogo */
+    text-align: center;
+    /* Alinear el texto al centro */
+    background-color: #e0ddddbd;
+    /* Color de fondo */
+    backdrop-filter: blur(10px);
+    /* Efecto de desenfoque */
+    border-radius: 10px;
+    /* Bordes redondeados */
+
+
+}
+
+/*----------------------Carrusel de autos----------------*/
+
+.carrusel-autos {
+    position: relative;
+    width: 1100px;
+    /* antes 750px */
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.77);
+    background-image: url('/Imagenes/Fondo Carru.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.carrusel h2 {
+    text-align: center;
+    font-size: 4rem;
+    color: #000000;
+    margin-bottom: 20px;
+    padding: 10px;
+    /* Espacio interno */
+    animation: slideBottom 1s ease forwards;
+    /*Animacion de aparicion desde abajo al cargar*/
+    display: inline;
+}
+
+.carrusel-imagenes {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carrusel-imagenes img {
+    opacity: 0;
+    transition: opacity 0.7s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 70%;
+    /* Cambia este valor para el tamaño deseado */
+    height: 70%;
+    /* Cambia este valor para el tamaño deseado */
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    /* Para que no se recorte el auto */
+    z-index: 1;
+}
+
+.carrusel-item {
+    width: 100%;
+    /* Ocupa todo el ancho del carrusel */
+    height: 100%;
+    /* Ocupa todo el alto del carrusel */
+    object-fit: cover;
+    /* Recorta la imagen para que no se deforme */
+}
+
+.carrusel-imagenes img.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.carrusel-item.active {
+    display: block;
+}
+
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1743e3;
+    color: #fff;
+    border: none;
+    font-size: 2em;
+    padding: 0 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.carrusel-btn.prev {
+    left: 10px;
+}
+
+.carrusel-btn.next {
+    right: 10px;
+}
+
+
+/*Control del scroll de toda la pagina*/
+html {
+
+    scroll-behavior: smooth;
+    /* Desplazamiento suave */
+
+}
+
+
+/*-----------------Section o seccion varias-----------*/
+
+.fab-float {
+    opacity: 0;
+    transform: translateX(60px) scale(0.7);
+    transition: opacity 0.6s, transform 0.6s;
+    position: fixed;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fab-float.visible {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
+.whatsapp-float {
+    bottom: 30px;
+    background: #25d366;
+    color: #fff;
+    font-size: 3.2rem;
+    padding: 22px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px #0005;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.whatsapp-float:hover {
+    background: #128c7e;
+    transform: scale(1.12) rotate(-8deg);
+}
+
+.gmail-float {
+    bottom: 100px;
+    /* Más arriba que WhatsApp */
+    background: #ea4335;
+    color: #fff;
+    font-size: 3.2rem;
+    padding: 22px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px #0005;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.gmail-float:hover {
+    background: #c5221f;
+    transform: scale(1.12) rotate(-8deg);
+}
+
+/*----------------- Testimonios -----------------*/
+.testimonios {
+    background: transparent;
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+
+.testimonios h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+.testimonios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonio {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 25px 20px;
+    width: 320px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    transition: transform 0.2s;
+}
+
+.testimonio:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 20px #0002;
+}
+
+.testimonio span {
+    display: block;
+    margin-top: 10px;
+    color: #1743e3;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+
+/*----------------- Preguntas Frecuentes (FAQ) -----------------*/
+.faq {
+    background: transparent;
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+.faq details {
+    margin: 0 auto 15px auto;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px #0001;
+    padding: 15px 20px;
+    text-align: left;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.faq details[open] {
+    box-shadow: 0 4px 16px #0002;
+}
+
+.faq summary {
+    font-weight: bold;
+    font-size: 1.1em;
+    outline: none;
+}
+
+.faq p {
+    margin: 10px 0 0 0;
+    color: #333;
+}
+
+
+
+/*----------------- Ubicación (Mapa) -----------------*/
+.ubicacion {
+    background: transparent;
+    padding: 35px 0 25px 0;
+    text-align: center;
+}
+
+.ubicacion h2 {
+    font-size: 1.7em;
+    margin-bottom: 18px;
+}
+
+.ubicacion iframe {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    max-width: 1500px;
+    aspect-ratio: 16 / 6;
+    height: auto;
+    display: block;
+    border: 0;
+}
+
+
+
+/* Modal de información */
+.modal-info {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content-info {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 24px;
+    max-width: 400px;
+    width: 90vw;
+    position: relative;
+    box-shadow: 0 4px 24px #0005;
+    text-align: left;
+}
+
+.close-modal-info {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 2em;
+    color: #333;
+    cursor: pointer;
+}
+
+
+/*------------------------------Servicios------------------------------*/
+
+
+/*Imagen Mantenimiento*/
+.Atencion-Cliente-mantenimiento h2 {
+    color: #000000;
+    font-size: 2.5em;
+    /* Tamaño de la fuente */
+    text-align: center;
+    /* Alinear el texto al centro */
+    margin-bottom: 20px;
+    /* Margen inferior */
+    opacity: 0.8;
+    /* Opacidad */
+    font-weight: bold;
+    /* Peso de la fuente */
+    margin-top: 45px;
+    padding: 10px;
+    /* Espacio interno */
+    display: inline-block;
+    /* Para centrar el título */
+}
+
+
+.Atencion-Cliente-mantenimiento p {
+    color: #000000;
+    font-size: 1.2em;
+    /* Tamaño de la fuente */
+    text-align: center;
+    /* Alinear el texto al centro */
+    margin-bottom: 20px;
+    /* Margen inferior */
+    opacity: 0.8;
+    /* Opacidad */
+    font-weight: bold;
+    /* Peso de la fuente */
+
+}
+
+.img-mantenimiento {
+    position: relative;
+    width: 94vw;
+    max-width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+    margin: 0;
+    left: 0;
+}
+
+.img-mantenimiento img {
+    width: 80vw;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.texto-sobre-imagen {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    color: #fff;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.texto-sobre-imagen p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    opacity: 0.8;
+    color: #fff;
+    font-weight: bold;
+}
+
+.texto-sobre-imagen .BoxUsados {
+    margin-top: 10%;
+    display: inline-block;
+    background: #1743e3;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #0008;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.texto-sobre-imagen .BoxUsados:hover {
+    background: #0428ac;
+    box-shadow: 0 4px 12px #0008;
+}
+
+/*Imagen Accesorios*/
+
+.img-accesorios {
+    position: relative;
+    width: 94vw;
+    max-width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+    margin: 0;
+    left: 0;
+}
+
+.img-accesorios img {
+    width: 80vw;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.texto-sobre-imagen2 {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.texto-sobre-imagen2 p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    opacity: 0.8;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.texto-sobre-imagen2 .BoxUsados2 {
+    margin-top: 10%;
+    display: inline-block;
+    background: #1743e3;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #0008;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.texto-sobre-imagen2 .BoxUsados2:hover {
+    background: #0428ac;
+    box-shadow: 0 4px 12px #0008;
+}
+
+/*------------------------Modal de Servicios----------------*/
+.modal-img-row {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.modal-img-row img {
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px #0001;
+    background: #fff;
+}
+
+.modal-content-info {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 24px;
+    max-width: 800px;
+    width: 95vw;
+    position: relative;
+    box-shadow: 0 4px 24px #0005;
+    text-align: left;
+    margin: 40px auto 40px auto;
+    /* separa arriba y abajo */
+    max-height: 90vh;
+    /* evita que el modal ocupe toda la altura */
+    overflow-y: auto;
+    /* agrega scroll si el contenido es muy grande */
+}
+
+.close-modal-info {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    font-size: 2em;
+    color: #333;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+@media (max-width: 600px) {
+    .modal-content-info {
+        padding: 18px 8px;
+        max-width: 98vw;
+    }
+
+    .close-modal-info {
+        top: 8px !important;
+        right: 10px !important;
+        font-size: 2em !important;
+    }
+}
+
+/*-------------------------Contenido del Modal----------------*/
+.modal-content-info h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.modal-content-info p,
+.modal-content-info ul,
+.modal-content-info li {
+    font-size: 1.15em;
+}
+
+.modal-content-info strong {
+    font-size: 1.2em;
+}
+
+/*---------Formulario mantenimiento y Boton-----*/
+#modal-turno form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+#modal-turno input,
+#modal-turno textarea {
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #bdbdbd;
+    font-size: 1em;
+    outline: none;
+    transition: border 0.2s;
+    background: #f5f5fa;
+    resize: vertical;
+}
+
+#modal-turno input:focus,
+#modal-turno textarea:focus {
+    border: 1.5px solid #1743e3;
+}
+
+#modal-turno button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    background: #25d366;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    margin-top: 8px;
+}
+
+#modal-turno button[type="submit"]:hover {
+    background: #128c7e;
+    transform: scale(1.05);
+}
+
+.BTN_Turno {
+    display: block;
+    margin: 18px auto 0 auto;
+    padding: 12px 28px;
+    background: #1743e3;
+    color: #fff;
+    font-size: 1.15em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #1743e355;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    letter-spacing: 0.5px;
+}
+
+.BTN_Turno:hover {
+    background: #0022ff;
+    transform: scale(1.07);
+}
+
+/*------------------------Pie de la Página----------------*/
+
+.footer-terminos {
+
+    background-color: #333;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    padding: 5px;
+    /* Espacio interno */
+    text-align: left;
+    /* Alinear a la izquierda */
+    font-size: 14px;
+    /* Tamaño de la fuente */
+    position: relative;
+    /*Posición relativa */
+    bottom: 0;
+    /* Pegado a la parte inferior */
+    width: 100%;
+    /* Ancho completo */
+    background: transparent;
+}
+
+/*Derechos de Autor*/
+.footer-terminos a {
+
+    color: #fff;
+    /* Color del texto */
+    text-decoration: underline;
+    /* Sin subrayado */
+    transition: color 0.3s;
+    /* Transición suave */
+
+}
+
+/*Efectos de los Derechos*/
+.footer-terminos a:hover {
+
+    color: #7289db;
+    /* Color del texto al pasar el mouse */
+    text-decoration: none;
+    /* Sin subrayado */
+
+}
+
+/*PRUEBA DE FOOTER PARA REDES<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-------*/
+.footer-contacto {
+
+    background-color: #1a1919f8;
+    /* Establece el color de fondo del pie de página a gris oscuro */
+    color: #fff;
+    /* Establece el color del texto a blanco */
+    padding: 20px;
+    /* Agrega un relleno de 20px alrededor del pie de página */
+    display: flex;
+    /* Utiliza el modelo de caja flexible para organizar los elementos hijos */
+    justify-content: space-between;
+    /* Distribuye el espacio entre los elementos hijos */
+    align-items: flex-start;
+    /* Alinea los elementos al inicio del eje transversal */
+
+}
+
+
+/* cuadro de texto */
+.formulario-contacto h3 {
+
+    color: #fff;
+    /*Establece el color del texto*/
+    font-size: 1.5em;
+    /*Define el tamaño de la fuente*/
+    margin-bottom: 10px;
+    /*Agrega un margen inferior*/
+    text-align: center;
+    /*Alinea el texto al centro*/
+    padding: 5px;
+    /*Agrega un relleno alrededor del texto*/
+
+}
+
+/* cuadro de texto de contacto */
+.formulario-contacto {
+
+    display: flex;
+    /*Utiliza el modelo de caja flexible para organizar los elementos hijos*/
+    flex-direction: column;
+    /*Organiza los elementos en una columna*/
+    align-items: center;
+    /*Alinea los elementos al centro*/
+    justify-content: center;
+    /*Justifica el contenido al centro*/
+    margin-top: 20px;
+    /*Agrega un margen superior*/
+
+}
+
+/*h3 Contacto*/
+.contacto-info h3 {
+
+    margin-bottom: 10px;
+    /* Margen inferior */
+    font-size: 1.2em;
+    /* Tamaño de la fuente */
+
+}
+
+/*Datos de la conce*/
+.contacto-info p {
+
+    margin-bottom: 5px;
+    /* Margen inferior */
+    font-size: 1em;
+    /* Tamaño de la fuente */
+    color: #ccc;
+    /* Color del texto */
+
+}
+
+/*margenes de las redes*/
+.footer-redes {
+
+    margin-top: 20px;
+    /* Margen superior */
+    margin-bottom: 20px;
+    /* Margen inferior */
+
+}
+
+/*Diseño de las redes de abajo*/
+.footer-redes a i {
+
+    color: #fff;
+    /* Color del texto */
+    font-size: 2em;
+    /* Tamaño de la fuente */
+    margin: 0 10px;
+    /* Margen horizontal */
+    transition: color 0.3s;
+    /* Transición suave */
+
+}
+
+/*Efecto de las redes de abajo*/
+.footer-redes a i:hover {
+
+    color: #476bec;
+    /* Color del texto al pasar el mouse */
+
+}
+
+/* Barras blancas de mensajes */
+/* .formulario-contacto input, */
+/* .formulario-contacto textarea { */
+
+/* width: 90%; /* Ancho del campo de entrada */
+/* padding: 9px; Espaciado interno */
+/* margin: 10px 0; Margen superior e inferior  */
+/* border: 1px solid #ccc; Borde */
+/* border-radius: 5px; Bordes redondeados  */
+/* position: center; Posición centrada */
+
+/* } */
+
+/* Boton enviar del Pie */
+/* .formulario-contacto button { */
+
+/* padding: 10px 20px; Espaciado interno  */
+/* background-color: #1743e3; Color de fondo  */
+/* color: #fff; Color del texto  */
+/* border: none; Sin borde  */
+/* border-radius: 5px; Bordes redondeados  */
+/* cursor: pointer; Cambia el cursor al pasar el mouse  */
+/* transition: background-color 0.3s ease; Transición suave  */
+/* margin-bottom: 15px; Margen inferior */
+
+/* } */
+
+/*Efecto del boton enviar*/
+/* .formulario-contacto button:hover { */
+
+/* background-color: #0428ac; Color de fondo al pasar el mouse  */
+
+/* } */
+
+/*Modo Responsive para conctato y mensaje consulta debajo*/
+@media (max-width: 600px)
+/* Pantallas pequeñas */
+    {
+
+    .footer-contacto {
+
+        flex-direction: column;
+        /* Cambia la dirección del flex a columna */
+        align-items: center;
+        /* Alinea los elementos al centro */
+
+    }
+
+    .footer-container-left,
+    .footer-container-right {
+
+        width: 100%;
+        /* Ancho completo */
+        margin-bottom: 15px;
+        /* Margen inferior */
+
+    }
+}
+
+/*Diseño para mensaje enviado de consulta*/
+.mensaje-modal {
+
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    /* Posición fija */
+    top: 0;
+    /* Pegado a la parte superior */
+    left: 0;
+    /* Pegado a la izquierda */
+    width: 100%;
+    /* Ancho completo */
+    height: 100%;
+    /* Altura completa */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semi-transparente */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    z-index: 1000;
+    /* Para que esté sobre otros elementos */
+
+}
+
+/*Estilo del mensaje*/
+.mensaje-contenido {
+
+    background-color: #fff;
+    /* Color de fondo */
+    padding: 20px;
+    /* Espaciado interno */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    text-align: center;
+    /* Alinear el texto al centro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    max-width: 300px;
+    /* Ancho máximo */
+    margin: 0 20px;
+    /* Margen horizontal */
+
+}
+
+/*Margen y Tamaño del mensaje*/
+.mensaje-contenido p {
+
+    margin-bottom: 20px;
+    /* Margen inferior */
+    font-size: 1.2em;
+    /* Tamaño de la fuente */
+
+}
+
+/*Diseño del boton de enviar*/
+.mensaje-contenido button {
+
+    padding: 10px 20px;
+    /* Espaciado interno */
+    border: none;
+    /* Sin borde */
+    background-color: #007bff;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    font-size: 1em;
+    /* Tamaño de la fuente */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el mouse */
+
+}
+
+/*Efecto del boton de enviar*/
+.mensaje-contenido button:hover {
+
+    background-color: #0056b3;
+    /* Color de fondo al pasar el mouse */
+
+}
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-------*/
+/*VARIABLES DE EFECTOS DE ANIMACION Y DESPLAZAMIENTO */
+
+/* Define una animacion llamada slideRight*/
+@keyframes slideRight {
+
+    0% {
+        /* Estado inicial de la animación */
+
+        transform: translateX(-100px);
+        /* Desplazamiento inicial */
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /* Estado final de la animación */
+
+        transform: translateX(0);
+        /* Desplazamiento final */
+        opacity: 1;
+        /* Opacidad final */
+
+    }
+
+}
+
+/* Define una animacion llamada slideLeft*/
+@keyframes slideLeft {
+
+    0% {
+        /* Estado inicial de la animación */
+
+        transform: translateX(100px);
+        /* Desplazamiento inicial */
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /* Estado final de la animación */
+
+        transform: translateX(0);
+        /* Desplazamiento final */
+        opacity: 1;
+        /* Opacidad final */
+
+    }
+
+}
+
+/* Define una animacion llamada slideTop*/
+@keyframes slideTop {
+
+    0% {
+        /* Estado inicial de la animación */
+
+        transform: translateY(100px);
+        /* Desplazamiento inicial */
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /* Estado final de la animación */
+
+        transform: translateY(0);
+        /* Desplazamiento final */
+        opacity: 1;
+        /* Opacidad final */
+
+    }
+
+}
+
+/* Define una animacion llamada slideBottom*/
+@keyframes slideBottom {
+
+    0% {
+        /* Estado inicial de la animación */
+
+        transform: translateY(-100px);
+        /* Desplazamiento inicial */
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /* Estado final de la animación */
+
+        transform: translateY(0);
+        /* Desplazamiento final */
+        opacity: 1;
+        /* Opacidad final */
+    }
+
+}
+
+/* Define una animacion llamada slideSci*/
+@keyframes slideSci {
+
+    0% {
+        /* Estado inicial de la animación */
+
+        transform: translateX(100px) rotate(45deg);
+        /* Desplazamiento inicial */
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /* Estado final de la animación */
+
+        transform: translateX(0) rotate(45deg);
+        /* Desplazamiento final */
+        opacity: 1;
+        /* Opacidad final */
+
+    }
+}
+
+/* Define una animacion llamada alejar*/
+@keyframes alejar {
+
+    0% {
+        /* Estado inicial de la animación */
+
+        transform: scale(1.1);
+        /* Desplazamiento inicial */
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /* Estado final de la animación */
+
+        transform: scale(1);
+        /* Desplazamiento final */
+        opacity: 1;
+        /* Opacidad final */
+
+    }
+}
+
+/* Define una animacion llamada autito*/
+@keyframes autito {
+
+    0% {
+        /* Estado inicial de la animación */
+
+        transform: translate(300px, -300px) scale(0) rotate(-45deg);
+        /* Desplazamiento inicial */
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /* Estado final de la animación */
+
+        transform: translate(0, 0) scale(1) rotate(-45deg);
+        /* Desplazamiento final */
+        opacity: 1;
+        /* Opacidad final */
+
+    }
+
+}
+
+/* Define una animacion llamada Auto-img2*/
+@keyframes Auto-img2 {
+
+    0% {
+        /*Estado inicial de la animacion*/
+
+        right: -40%;
+        /*Posiciona el elemento en 40% fuera del lado derecho*/
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /*Estado final de la animacion*/
+
+        right: -25%;
+        /*Posiciona el elemento en 25% fuera del lado derecho*/
+        opacity: 1;
+        /* Opacidad final */
+
+    }
+}

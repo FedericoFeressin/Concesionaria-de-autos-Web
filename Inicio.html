@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concecionaria de Autos</title>
+    <link rel="stylesheet" href="/Trabajo/Inicio/style.css"> <!-- Enlace al archivo CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="/Imagenes/Icono.png" type="image/png">
+</head>
+
+<body>
+
+    <header class="Barra_Menu"> <!-- Barra Superior -->
+
+        <a href="#" class="Barra_Logo">Premium Quality</a> <!-- Logo de la barra de navegación -->
+
+
+        <nav class="Barra_Button"> <!-- Barra de navegación principal del sitio -->
+
+            <!-- Enlaces de la barra menu -->
+            <a href="/Trabajo/Inicio/Inicio.html">Inicio</a>
+            <a href="/Trabajo/Catalogo/Catalogo.html" style="--i:2;">Catálogo</a>
+            <a href="/Trabajo/Ofertas/Oferta.html" style="--i:4;">Ofertas</a>
+
+        </nav>
+
+        <div class="Barra_Redes"> <!-- Iconos de las Redes Sociales en la barra Menu -->
+
+            <!-- Iconos con Enlaces de las Redes Sociales -->
+            <a href="" style="--i:1;"><i class='bx bxl-twitter'></i></a>
+            <a href="" style="--i:2;"><i class='bx bxl-facebook'></i></a>
+            <a href="" style="--i:3;"><i class='bx bxl-instagram-alt'></i></a>
+
+        </div>
+
+    </header>
+
+    <!-- Seccion Principal de la pagina -->
+    <section class="Texto">
+
+        <div class="Texto_Mensaje">
+
+            <h1>Experiencia en venta de automóviles.</h1> <!-- Titulo Destacado -->
+            <h3>¡Consulta nuestra amplia gama de ofertas!</h3> <!-- Subtitulo -->
+            <p>!Bienvenidos a Premium Quality donde encuentra el vehiculo adecuado!
+                Encuentra el vehiculo de tus sueños entre
+                nuestra amplia gamas de modelos.</p> <!-- Descripcion -->
+            <a href="/Trabajo/Catalogo/Catalogo.html" class="btn">!Explorar mas!</a>
+            <!-- Boton de llamada a la accion -->
+
+
+        </div>
+
+
+    </section>
+
+    <!-- Catalogo de autos con sus respectivas card o tarjetas -->
+    <section class="catalogo">
+        <!-- Carrusel de autos destacados -->
+        <main class="carrusel">
+            <h2>Vehiculos Disponibles</h2>
+            <div class="carrusel-autos">
+                <button class="carrusel-btn prev">&#10094;</button>
+                <div class="carrusel-imagenes">
+                    <img src="/Autos/car10.png" class="carrusel-item active" alt="Auto 1">
+                    <img src="/Autos/car14.png" class="carrusel-item" alt="Auto 2">
+                    <img src="/Autos/car13.png" class="carrusel-item" alt="Auto 3">
+                    <img src="/Autos/car12.png" class="carrusel-item" alt="Auto 4">
+                    <img src="/Autos/Lada granta.png" class="carrusel-item" alt="Auto 5">
+
+                </div>
+                <button class="carrusel-btn next">&#10095;</button>
+            </div>
+
+        </main>
+        <!-- Seccion de atencion al cliente para mantenimiento-->
+        <section class="Atencion-Cliente-mantenimiento">
+
+            <h2>Mantenga su auto funcionando como uno nuevo.</h2>
+            <!-- Subtitulo de la seccion de atencion al cliente -->
+            <p>El servicio de calidad comienza con nuestros técnicos capacitados en la fábrica que utilizan los últimos
+                equipos de diagnóstico y piezas originales para mantener su vehículo en sintonía.</p>
+
+            <!-- Descripcion de la seccion de atencion al cliente -->
+            <div class="img-mantenimiento">
+
+                <div class="texto-sobre-imagen">
+
+                    <p class="Texto-Servicios-izquierda">Servicios de mantenimientos.</p>
+                    <button class="BoxUsados" onclick="abrirModalInfo('mantenimiento')">Reservar ahora</button>
+
+                </div>
+
+                <!--Imagen de mantenimiento-->
+                <picture class="img-mantenimiento">
+
+                    <img src="/Atencion al Cliente Fotos/Mante 1.jpg" alt="">
+
+                </picture>
+
+            </div>
+            <!-- Imagen representativa de la seccion de atencion al cliente para accesorios-->
+            <div class="Atencion-Cliente2">
+
+                <h2>Repuestos Originales para su auto.</h2> <!-- Subtitulo de la seccion de atencion al cliente -->
+                <p>Cuando utiliza piezas originales, puede estar seguro de que todas las piezas encajarán y funcionarán
+                    como las originales de fábrica. Todas las piezas están diseñadas teniendo en cuenta especificaciones
+                    y directrices estrictas, y su durabilidad se somete a rigurosas pruebas.</p>
+
+                <div class="img-accesorios">
+
+                    <div class="texto-sobre-imagen2">
+
+                        <p class="Texto-Servicios-izquierda2">Venta de respuestos.</p>
+                        <button class="BoxUsados2" onclick="abrirModalInfo('accesorios')">Comprar ahora</button>
+
+                    </div>
+                    <!--Imagen de accesorios-->
+                    <picture class="img-accesorios">
+
+                        <img src="/Atencion al Cliente Fotos/Accesorios.jpg" alt="">
+
+                    </picture>
+                </div>
+            </div>
+
+
+
+        </section>
+        <!-- Seccion de testimonios, preguntas frecuentes y ubicacion -->
+        <section class="testimonios">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="testimonios-grid">
+                <div class="testimonio">
+                    <p>"Excelente atención y variedad de autos. ¡Muy recomendable!"</p>
+                    <span>- Juan Pérez</span>
+                </div>
+                <div class="testimonio">
+                    <p>"Compré mi auto usado y está como nuevo. ¡Gracias Premium Quality!"</p>
+                    <span>- María López</span>
+                </div>
+            </div>
+        </section>
+        <!-- Preguntas frecuentes -->
+        <section class="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <details>
+                <summary>¿Ofrecen financiación?</summary>
+                <p>Sí, contamos con planes de financiación adaptados a tus necesidades.</p>
+            </details>
+            <details>
+                <summary>¿Puedo entregar mi auto usado como parte de pago?</summary>
+                <p>Sí, recibimos tu auto usado como parte de pago.</p>
+            </details>
+            <details>
+                <summary>¿Tienen garantía en los autos usados?</summary>
+                <p>Sí, todos nuestros autos usados cuentan con una garantía de 6 meses.</p>
+            </details>
+
+        </section>
+
+
+        <!-- Ubicación de la concesionaria -->
+        <section class="ubicacion">
+            <h2>¿Dónde estamos?</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="250" style="border:0;"
+                allowfullscreen="" loading="lazy"></iframe>
+
+        </section>
+
+    </section>
+
+
+
+    <!-- Footer = Pie de la pagina -->
+    <footer class="footer-contacto">
+
+        <div class="footer-contenedor-left">
+
+            <div class="contacto-info">
+
+                <h3>Contáctanos</h3>
+                <p>Dirección: Av. 25 de Mayo 526, Capital Federal BsAs.</p>
+                <p>Teléfono: +54 9 2224 8849523</p>
+                <p>E-Mail: premiumqualityedi@gmail.com</p>
+
+                <div class="footer-redes">
+
+                    <h4>Síguenos en redes sociales</h4>
+                    <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-terminos">
+
+                <p>© 2025 Premium Quality. Todos los derechos reservados a Federico Feressin.</p>
+                <p><a href="#">Política de privacidad</a></p> <!-- Enlace a la política de privacidad -->
+                <p><a href="#">Términos y condiciones</a></p> <!-- Enlace a los términos y condiciones -->
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+    <!-- Modal para mostrar informacion adicional -->
+    <div id="modal-info" class="modal-info">
+        <div class="modal-content-info">
+            <span class="close-modal-info" onclick="cerrarModalInfo()">&times;</span>
+            <div id="modal-texto"></div>
+        </div>
+    </div>
+
+    <!-- Modal para solicitar turno de mantenimiento -->
+    <div id="modal-turno" class="modal-info">
+        <div class="modal-content-info">
+            <span class="close-modal-info" onclick="cerrarFormularioTurno()">&times;</span>
+            <h2>Solicitar turno de mantenimiento</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo" required>
+                <input type="text" placeholder="Modelo de auto" required>
+                <input type="date" required>
+                <textarea placeholder="Comentario"></textarea>
+                <button type="submit">Enviar solicitud</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="/Trabajo/Inicio/Modal-Info.js"></script>
+
+    <!-- Botones Flotantes de WP Y Gmail -->
+    <a href="https://wa.me/+54922248849523" class="fab-float whatsapp-float" target="_blank" title="WhatsApp">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=premiumqualityedi@gmail.com" class="fab-float gmail-float"
+        target="_blank" title="Enviar correo">
+        <i class='bx bxl-gmail'></i>
+    </a>
+
+    <script src="/Trabajo/Inicio/Carrusel.js"></script>
+
+</body>
+
+</html>

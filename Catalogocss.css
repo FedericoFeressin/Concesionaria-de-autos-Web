@@ -1,0 +1,1119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans+Runic&display=swap');
+
+/*Selector universal, aplica los estilos definidos a todos los elementos*/
+* {
+    font-family: 'Noto Sans Runic', sans-serif;
+    /* Fuente para todo el sitio */
+    font-size: 13px;
+    /* Tamaño de fuente base */
+    margin: 0;
+    /* Margen cero */
+    padding: 0;
+    /* Relleno cero */
+    box-sizing: border-box;
+    /* Cambia el modelo de caja para incluir el padding y el borde en el ancho y alto total del elemento */
+}
+
+/*Fondo de la pagina*/
+body {
+
+    background-image: url('/Imagenes/Fondo 1.jpg');
+    /* Imagen de fondo */
+    background-size: cover;
+    /* Ajusta la imagen al tamaño de la pantalla */
+    background-repeat: no-repeat;
+    /* No repetir la imagen */
+    background-attachment: fixed;
+    /* Fondo fijo */
+    scroll-behavior: smooth;
+    /* Desplazamiento suave */
+    background-position: center;
+    /* Centra la imagen de fondo */
+
+}
+
+/* Barra de navegación */
+.Barra_Button a {
+
+    position: relative;
+    /* Posición relativa */
+    font-size: 26px;
+    /* Tamaño de la fuente */
+    color: #fff;
+    /* Color del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    font-weight: 300;
+    /* Peso de la fuente */
+    margin-right: 30px;
+    /* Espacio entre los enlaces */
+    text-transform: none;
+    /* Sin mayúsculas */
+
+}
+
+/*barramenu*/
+.Barra_Menu {
+
+    position: sticky;
+    /* Pegado a la parte superior */
+    top: 0;
+    /* Pegado a la parte superior */
+    left: 0;
+    /* Alineado a la izquierda */
+    width: 100%;
+    /* Ancho completo */
+    padding: 1rem;
+    /* Espacio interno */
+    background: transparent;
+    /* Fondo transparente */
+    display: flex;
+    /* Utiliza el modelo de caja flexible */
+    justify-content: space-between;
+    /* Espacio entre elementos */
+    align-items: center;
+    /* Alinear verticalmente */
+    z-index: 1000;
+    /* Para que esté por encima de otros elementos */
+    border-bottom: 5px solid rgba(5, 49, 207, 0.568);
+    /* Borde inferior visible */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Sombra suave */
+    background: #1f1f2081;
+    /* Fondo semitransparente */
+    backdrop-filter: blur(10px);
+    /* Efecto de desenfoque */
+    animation: slideBottom 1s ease forwards;
+    /*Animacion de aparicion desde abajo al cargar*/
+
+}
+
+/*Efecto de la barra de navegacion*/
+.Barra_Button a::after {
+
+    content: '';
+    /* Contenido vacío */
+    position: absolute;
+    /* Posición absoluta */
+    left: 0;
+    /* Alineado a la izquierda */
+    bottom: -6px;
+    /* Espacio entre el texto y el borde */
+    width: 100%;
+    /* Ancho del borde */
+    height: 3px;
+    /* Espacio entre el texto y el borde */
+    background: #4169f8;
+    /* Color del borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    transform: translateY(5px);
+    /* Desplazamiento */
+    transition: .5s;
+    /* Transición suave */
+    opacity: 0;
+    /* Opacidad inicial */
+
+}
+
+/*Efecto de los botones de la barra menu*/
+.Barra_Button a:hover::after {
+
+    transform: translateY(0);
+    /* Desplazamiento */
+    opacity: 1;
+    /* Opacidad */
+
+}
+
+/*Logo Premium Quality*/
+.Barra_Logo {
+
+    font-size: 25px;
+    /* Tamaño de la fuente */
+    color: #fff;
+    /* Color del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    font-weight: 300;
+    /* Peso de la fuente */
+    opacity: 0;
+    /* Opacidad inicial */
+    animation: slideRight 1s ease forwards;
+    /*Animacion de aparicion desde la derecha al cargar*/
+
+}
+
+/*efecto del logo*/
+.Barra_Logo::after {
+
+    content: '';
+    /* Contenido vacío */
+    position: absolute;
+    /* Posición absoluta */
+    left: 0;
+    /* Alineado a la izquierda */
+    bottom: -6px;
+    /* Espacio entre el texto y el borde */
+    width: 100%;
+    /* Ancho del borde */
+    height: 3px;
+    /* Espacio entre el texto y el borde */
+    background: #4169f8;
+    /* Color del borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    transform: translateY(5px);
+    /* Desplazamiento */
+    transition: .5s;
+    /* Transición suave */
+    opacity: 0;
+    /* Opacidad inicial */
+}
+
+/*Efecto del logo*/
+.Barra_Logo:hover::after {
+
+    transform: translateY(0);
+    /* Desplazamiento */
+    opacity: 1;
+    /* Opacidad */
+
+}
+
+
+/*barra de redes sociales*/
+.Barra_Redes {
+
+    display: flex;
+    /* Utiliza el modelo de caja flexible */
+    justify-content: space-between;
+    /* Espacio entre iconos */
+    width: 150px;
+    /* Ancho de la barra */
+    height: 40px;
+    /* Altura de la barra */
+}
+
+/*barra de redes*/
+.Barra_Redes a {
+
+    display: inline-flex;
+    /* Mostrar como bloque en línea */
+    justify-content: center;
+    /* Centrar icono */
+    align-items: center;
+    /* Centrar icono */
+    width: 40px;
+    /* Ancho del icono */
+    height: 40px;
+    /* Tamaño del icono */
+    background: transparent;
+    /* Fondo transparente */
+    border: 2px solid transparent;
+    /* Borde transparente */
+    text-decoration: none;
+    /* Sin subrayado */
+    transform: rotate(45deg);
+    /* Rotación del icono */
+    transition: .5s;
+    /* Transición suave */
+    opacity: 0;
+    /* Opacidad inicial */
+    animation: slideSci 1s ease forwards;
+    /*Animacion de aparicion desde la derecha al cargar*/
+    animation-delay: calc(.2s * var(--i));
+    /* Retraso de la animación */
+
+}
+
+/*efecto de las redes sociales*/
+.Barra_Redes a:hover {
+
+    border-color: #4169f8;
+    /* Color del borde al pasar el mouse */
+
+}
+
+.Barra_Redes a i {
+
+    font-size: 24px;
+    /* Tamaño del icono */
+    color: #eaeaea;
+    /* Color del icono */
+    transform: rotate(-45deg);
+    /* Rotación del icono */
+
+}
+
+
+/*------Barra de Filtros------*/
+
+.catalogo-filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5fa;
+    padding: 22px 10px 18px 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0001;
+    margin: 30px auto 25px auto;
+    max-width: 900px;
+}
+
+/*Barra de Busqueda del Filtro*/
+
+.catalogo-filtros input[type="text"],
+.catalogo-filtros select {
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #bdbdbd;
+    font-size: 1em;
+    outline: none;
+    transition: border 0.2s;
+    min-width: 180px;
+    background: #fff;
+}
+
+.catalogo-filtros input[type="text"]:focus,
+.catalogo-filtros select:focus {
+    border: 1.5px solid #1743e3;
+}
+
+/*Boton de Filtro*/
+
+.catalogo-filtros button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    background: #1743e3;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/*Efecto del Boton de Filtro*/
+
+.catalogo-filtros button:hover {
+    background: #0022ff;
+    transform: scale(1.05);
+}
+
+
+
+/*---------------- Hoja del catálogo ---------------------------- */
+
+.catalogo {
+
+    padding: 40px;
+    /* Espacio alrededor del catálogo */
+    text-align: center;
+    /* Alinear el texto al centro */
+    background-color: #f2e7e7dd;
+    /* Color de fondo */
+
+
+}
+
+/* Titulo del catalogo */
+
+.catalogo h2 {
+
+    font-size: 4em;
+    /* Tamaño de la fuente */
+    margin-bottom: 20px;
+    /* Margen inferior */
+    color: #000000;
+    /* Color del texto */
+    animation: slideBottom 1s ease forwards;
+    /*Animacion de aparicion desde abajo al cargar*/
+    /*"ease" suaviza la animacion y "forwards" mantiene la animacion*/
+
+}
+
+
+/*Titulos de los modelos*/
+
+.Titulo-Modelos h3 {
+
+
+    font-size: 2em;
+    /* Tamaño de la fuente */
+    margin-top: 25px;
+    /* Margen superior */
+    margin-bottom: 25px;
+    /* Margen inferior */
+    color: #050505;
+    /* Color del texto */
+    animation: slideBottom 1s ease forwards;
+    /*Animacion de aparicion desde abajo al cargar*/
+    background-color: #1f1f2081;
+    /* Fondo semitransparente */
+    backdrop-filter: blur(10px);
+    /* Efecto de desenfoque */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    padding: 10px;
+    /* Espacio interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Sombra suave */
+    border-bottom: 2px solid #00000083;
+    /* Borde inferior */
+
+}
+
+/* Grid para organizar las tarjetas */
+
+.catalogo-grid {
+
+    display: flex;
+    /*Utiliza el modelo de caja flexible*/
+    gap: 20px;
+    /* Espacio entre las tarjetas */
+    flex-wrap: wrap;
+    /* Permite que las tarjetas se ajusten a la pantalla */
+    justify-content: center;
+    /* Centra las tarjetas horizontalmente */
+
+
+}
+
+/* Estilos de la tarjeta */
+
+.card {
+
+    background-color: #d2b7b7c3;
+    /*Color del fondo de la tarjeta*/
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    /* Sombra */
+    width: 200px;
+    /* Ancho de la tarjeta */
+    overflow: hidden;
+    /* Ocultar el desbordamiento */
+    text-align: center;
+    /* Alinear el texto al centro */
+    animation: slideBottom 1s ease forwards;
+    /*Animacion de aparicion desde abajo al cargar*/
+    transition: transform 0.4s ease;
+    /* Transición suave */
+
+}
+
+/*Efecto de zoom en las tarjetas*/
+
+.card:hover {
+
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    /* Sombra más intensa */
+    transform: scale(1.4);
+    /* Aumentar el tamaño */
+    transition: all 0.5s ease;
+    /* Transición suave */
+
+}
+
+/*Efecto de la imagen en la tarjeta*/
+
+.card:hover img {
+
+    transform: scale(1.1);
+    /* Aumentar el tamaño de la imagen */
+    transition: all 0.5s ease;
+    /* Transición suave */
+
+}
+
+/*Efecto de la sombra de la tarjeta*/
+
+.card:hover .card-content {
+
+    transform: translateY(-10px);
+    /* Elevar el contenido */
+    transition: all 0.5s ease;
+    /* Transición suave */
+
+}
+
+
+/*Boton Comprar*/
+
+.card .BTN_Comprar {
+
+    display: inline-block;
+    /* Mostrar como bloque en línea */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    background-color: #1743e3;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    margin-top: 50px;
+    /* Margen superior */
+    margin-bottom: 50px;
+    /* Margen inferior */
+    box-shadow: rgb(0, 0, 0) 4px 5px 5px;
+    /* Sombra */
+    animation: slideBottom 1s ease forwards;
+    /*Animacion de aparicion desde abajo al cargar*/
+
+}
+
+/*Efecto del boton comprar*/
+
+.card .BTN_Comprar:hover {
+
+    background-color: #011385;
+    /* Color de fondo al pasar el mouse */
+    color: #fff;
+    /* Color del texto al pasar el mouse */
+
+}
+
+
+
+/*Imagen de la tarjeta*/
+
+.card img {
+
+    width: 100%;
+    /* Ancho completo */
+    height: 150px;
+    /* Altura fija */
+    object-fit: cover;
+    /* Ajustar la imagen */
+
+
+}
+
+/*Texto de la tarjeta*/
+
+.card-content {
+
+    padding: 1px;
+    /* Espacio interno */
+
+}
+
+/*Titulo de la tarjeta*/
+
+.card-content h3 {
+
+    font-size: 1.2em;
+    /* Tamaño de la fuente */
+    margin: 10px 0;
+    /* Margen superior e inferior */
+    color: #000;
+    /* Color del texto */
+    /* border-bottom: #000 2px solid; Línea inferior */
+
+}
+
+/*Texto de la tarjeta*/
+
+.card-content p {
+
+    font-size: 1em;
+    /* Tamaño de la fuente */
+    color: #555;
+    /* Color del texto */
+    border-bottom: #000 2px solid;
+    /* Línea inferior */
+
+}
+
+/* ------------------ FIN CATALOGO -------------*/
+
+
+
+/*------------ Mensaje Modal de Compra ---------------*/
+
+/* Estilos del Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.modal-contentt {
+
+    background-color: #ffffffbd;
+    margin: 2% auto;
+    padding: 80px 40px;
+    border: 1px solid #888;
+    width: 98%;
+    max-width: 800px;
+    position: relative;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+    animation: slideBottom 1s ease forwards;
+    /*Animacion de aparicion desde abajo al cargar*/
+    backdrop-filter: blur(10px);
+    /* Efecto de desenfoque */
+
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: black;
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.modal-image img {
+    width: 80%;
+    height: 80%;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.car-details {
+    margin-top: 20px;
+}
+
+.car-details p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.BTN_Confirmar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.BTN_Confirmar:hover {
+    background-color: #45a049;
+}
+
+
+/* --------------- Mensaje Modal Responsive ---------------*/
+
+@media (max-width: 768px) {
+    .modal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+}
+
+
+/*-----------Quick View----------*/
+
+.modal-quickview {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-quickview.active {
+    display: flex;
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    max-width: 400px;
+    width: 90vw;
+    position: relative;
+    box-shadow: 0 4px 24px #0005;
+}
+
+.close-modal {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 2em;
+    color: #333;
+    cursor: pointer;
+}
+
+/*------Solicitar Info-----*/
+
+.BTN_Solicitar {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 8px 16px;
+    background: #25d366;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.BTN_Solicitar:hover {
+    background: #128c7e;
+    transform: scale(1.07);
+}
+
+
+/*------------------------Pie de la Página----------------*/
+
+.footer-terminos {
+
+    background-color: #333;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    padding: 5px;
+    /* Espacio interno */
+    text-align: left;
+    /* Alinear a la izquierda */
+    font-size: 14px;
+    /* Tamaño de la fuente */
+    position: relative;
+    /*Posición relativa */
+    bottom: 0;
+    /* Pegado a la parte inferior */
+    width: 100%;
+    /* Ancho completo */
+    background: transparent;
+}
+
+/*Derechos de Autor*/
+
+.footer-terminos a {
+
+    color: #fff;
+    /* Color del texto */
+    text-decoration: underline;
+    /* Sin subrayado */
+    transition: color 0.3s;
+    /* Transición suave */
+
+}
+
+/*Efectos de los Derechos*/
+
+.footer-terminos a:hover {
+
+    color: #7289db;
+    /* Color del texto al pasar el mouse */
+    text-decoration: none;
+    /* Sin subrayado */
+
+}
+
+
+/*PRUEBA DE FOOTER PARA REDES<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-------*/
+
+.footer-contacto {
+
+    background-color: #1a1919f8;
+    /* Establece el color de fondo del pie de página a gris oscuro */
+    color: #fff;
+    /* Establece el color del texto a blanco */
+    padding: 20px;
+    /* Agrega un relleno de 20px alrededor del pie de página */
+    display: flex;
+    /* Utiliza el modelo de caja flexible para organizar los elementos hijos */
+    justify-content: space-between;
+    /* Distribuye el espacio entre los elementos hijos */
+    align-items: flex-start;
+    /* Alinea los elementos al inicio del eje transversal */
+
+}
+
+
+/* cuadro de texto */
+
+.formulario-contacto h3 {
+
+    color: #fff;
+    /*Establece el color del texto*/
+    font-size: 1.5em;
+    /*Define el tamaño de la fuente*/
+    margin-bottom: 10px;
+    /*Agrega un margen inferior*/
+    text-align: center;
+    /*Alinea el texto al centro*/
+    padding: 5px;
+    /*Agrega un relleno alrededor del texto*/
+
+}
+
+/* cuadro de texto de contacto */
+
+.formulario-contacto {
+
+    display: flex;
+    /*Utiliza el modelo de caja flexible para organizar los elementos hijos*/
+    flex-direction: column;
+    /*Organiza los elementos en una columna*/
+    align-items: center;
+    /*Alinea los elementos al centro*/
+    justify-content: center;
+    /*Justifica el contenido al centro*/
+    margin-top: 20px;
+    /*Agrega un margen superior*/
+
+}
+
+/*h3 Contacto*/
+
+.contacto-info h3 {
+
+    margin-bottom: 10px;
+    /* Margen inferior */
+    font-size: 1.2em;
+    /* Tamaño de la fuente */
+
+}
+
+/*Datos de la conce*/
+
+.contacto-info p {
+
+    margin-bottom: 5px;
+    /* Margen inferior */
+    font-size: 1em;
+    /* Tamaño de la fuente */
+    color: #ccc;
+    /* Color del texto */
+
+}
+
+/*margenes de las redes*/
+
+.footer-redes {
+
+    margin-top: 20px;
+    /* Margen superior */
+    margin-bottom: 20px;
+    /* Margen inferior */
+
+}
+
+/*Diseño de las redes de abajo*/
+
+.footer-redes a i {
+
+    color: #fff;
+    /* Color del texto */
+    font-size: 2em;
+    /* Tamaño de la fuente */
+    margin: 0 10px;
+    /* Margen horizontal */
+    transition: color 0.3s;
+    /* Transición suave */
+
+}
+
+/*Efecto de las redes de abajo*/
+
+.footer-redes a i:hover {
+
+    color: #476bec;
+    /* Color del texto al pasar el mouse */
+
+}
+
+/*-----------------Section o secciones varias-----------*/
+
+.fab-float {
+    opacity: 0;
+    transform: translateX(60px) scale(0.7);
+    transition: opacity 0.6s, transform 0.6s;
+    position: fixed;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fab-float.visible {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
+.whatsapp-float {
+    bottom: 30px;
+    background: #25d366;
+    color: #fff;
+    font-size: 3.2rem;
+    padding: 22px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px #0005;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.whatsapp-float:hover {
+    background: #128c7e;
+    transform: scale(1.12) rotate(-8deg);
+}
+
+.gmail-float {
+    bottom: 100px;
+    background: #ea4335;
+    color: #fff;
+    font-size: 3.2rem;
+    padding: 22px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px #0005;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.gmail-float:hover {
+    background: #c5221f;
+    transform: scale(1.12) rotate(-8deg);
+}
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-------*/
+/*VARIABLES DE EFECTOS DE ANIMACION Y DESPLAZAMIENTO */
+
+/* Define una animacion llamada slideRight*/
+
+@keyframes slideRight {
+
+    0% {
+        /* Estado inicial de la animación */
+
+        transform: translateX(-100px);
+        /* Desplazamiento inicial */
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /* Estado final de la animación */
+
+        transform: translateX(0);
+        /* Desplazamiento final */
+        opacity: 1;
+        /* Opacidad final */
+
+    }
+
+}
+
+/* Define una animacion llamada slideLeft*/
+
+@keyframes slideLeft {
+
+    0% {
+        /* Estado inicial de la animación */
+
+        transform: translateX(100px);
+        /* Desplazamiento inicial */
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /* Estado final de la animación */
+
+        transform: translateX(0);
+        /* Desplazamiento final */
+        opacity: 1;
+        /* Opacidad final */
+
+    }
+
+}
+
+/* Define una animacion llamada slideTop*/
+
+@keyframes slideTop {
+
+    0% {
+        /* Estado inicial de la animación */
+
+        transform: translateY(100px);
+        /* Desplazamiento inicial */
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /* Estado final de la animación */
+
+        transform: translateY(0);
+        /* Desplazamiento final */
+        opacity: 1;
+        /* Opacidad final */
+
+    }
+
+}
+
+/* Define una animacion llamada slideBottom*/
+
+@keyframes slideBottom {
+
+    0% {
+        /* Estado inicial de la animación */
+
+        transform: translateY(-100px);
+        /* Desplazamiento inicial */
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /* Estado final de la animación */
+
+        transform: translateY(0);
+        /* Desplazamiento final */
+        opacity: 1;
+        /* Opacidad final */
+    }
+
+}
+
+/* Define una animacion llamada slideSci*/
+
+@keyframes slideSci {
+
+    0% {
+        /* Estado inicial de la animación */
+
+        transform: translateX(100px) rotate(45deg);
+        /* Desplazamiento inicial */
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /* Estado final de la animación */
+
+        transform: translateX(0) rotate(45deg);
+        /* Desplazamiento final */
+        opacity: 1;
+        /* Opacidad final */
+
+    }
+}
+
+/* Define una animacion llamada alejar*/
+
+@keyframes alejar {
+
+    0% {
+        /* Estado inicial de la animación */
+
+        transform: scale(1.1);
+        /* Desplazamiento inicial */
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /* Estado final de la animación */
+
+        transform: scale(1);
+        /* Desplazamiento final */
+        opacity: 1;
+        /* Opacidad final */
+
+    }
+}
+
+/* Define una animacion llamada autito*/
+
+@keyframes autito {
+
+    0% {
+        /* Estado inicial de la animación */
+
+        transform: translate(300px, -300px) scale(0) rotate(-45deg);
+        /* Desplazamiento inicial */
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /* Estado final de la animación */
+
+        transform: translate(0, 0) scale(1) rotate(-45deg);
+        /* Desplazamiento final */
+        opacity: 1;
+        /* Opacidad final */
+
+    }
+
+}
+
+/* Define una animacion llamada Auto-img2*/
+
+@keyframes Auto-img2 {
+
+    0% {
+        /*Estado inicial de la animacion*/
+
+        right: -40%;
+        /*Posiciona el elemento en 40% fuera del lado derecho*/
+        opacity: 0;
+        /* Opacidad inicial */
+
+    }
+
+    100% {
+        /*Estado final de la animacion*/
+
+        right: -25%;
+        /*Posiciona el elemento en 25% fuera del lado derecho*/
+        opacity: 1;
+        /* Opacidad final */
+
+    }
+}
