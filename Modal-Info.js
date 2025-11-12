@@ -14,19 +14,19 @@ function abrirModalInfo(tipo) {
         <ul>
             <li>Cambio de aceite y filtros</li>
             <div class="modal-img-row">
-            <img src="/Atencion al Cliente Fotos/IMG servicios/Aceite.png" alt="Cambio de aceite" style="height:150px;">
-            <img src="/Atencion al Cliente Fotos/IMG servicios/Filtro.png" alt="Filtro" style="height:150px;">
+            <img src="Atencion al Cliente Fotos/IMG servicios/Aceite.png" alt="Cambio de aceite" style="height:150px;">
+            <img src="Atencion al Cliente Fotos/IMG servicios/Filtro.png" alt="Filtro" style="height:150px;">
             
         </div>
             <li>Revisión de frenos y suspensión</li>
             <div class="modal-img-row">
-            <img src="/Atencion al Cliente Fotos/IMG servicios/Frenos.png" alt="Frenos" style="height:150px;">
-            <img src="/Atencion al Cliente Fotos/IMG servicios/Suspension.png" alt="Suspension" style="height:150px;">
+            <img src="Atencion al Cliente Fotos/IMG servicios/Frenos.png" alt="Frenos" style="height:150px;">
+            <img src="Atencion al Cliente Fotos/IMG servicios/Suspension.png" alt="Suspension" style="height:150px;">
         </div>
             <li>Chequeo general y escaneo electrónico</li>
             <div class="modal-img-row">
-            <img src="/Atencion al Cliente Fotos/IMG servicios/Chequeo.png" alt="Chequeo" style="height:150px;">
-            <img src="/Atencion al Cliente Fotos/IMG servicios/Escaner.png" alt="Escaner" style="height:150px;">
+            <img src="Atencion al Cliente Fotos/IMG servicios/Chequeo.png" alt="Chequeo" style="height:150px;">
+            <img src="Atencion al Cliente Fotos/IMG servicios/Escaner.png" alt="Escaner" style="height:150px;">
         </div>
         </ul>
         <p><strong>¡Solicita tu turno y mantené tu auto como nuevo!</strong></p>
@@ -40,17 +40,17 @@ function abrirModalInfo(tipo) {
             <ul>
                 <li>Baterías, lámparas, limpiaparabrisas</li>
             <div class="modal-img-row">
-                <img src="/Atencion al Cliente Fotos/IMG servicios/Bateria.png" alt="Bateria" style="height:150px;">
-                <img src="/Atencion al Cliente Fotos/IMG servicios/Focos.png" alt="Focos" style="height:150px;">
-                <img src="/Atencion al Cliente Fotos/IMG servicios/LimpiaParabrisas.png" alt="LimpiaParabrisas" style="height:150px;">
+                <img src="Atencion al Cliente Fotos/IMG servicios/Bateria.png" alt="Bateria" style="height:150px;">
+                <img src="Atencion al Cliente Fotos/IMG servicios/Focos.png" alt="Focos" style="height:150px;">
+                <img src="Atencion al Cliente Fotos/IMG servicios/LimpiaParabrisas.png" alt="LimpiaParabrisas" style="height:150px;">
                 <!-- Agrega más imágenes aquí -->
             </div>
                 <li>Tapizados, alfombras, cubiertas</li>
             <div class="modal-img-row">
-                <img src="/Atencion al Cliente Fotos/IMG servicios/Tapizado.png" alt="Tapizado" style="height:150px;">
-                <img src="/Atencion al Cliente Fotos/IMG servicios/Alfombras.png" alt="Alfombras" style="height:150px;">
-                <img src="/Atencion al Cliente Fotos/IMG servicios/Cubiertas.png" alt="Cubiertas" style="height:150px;">
-                <!-- Agrega más imágenes aquí -->
+                <img src="Atencion al Cliente Fotos/IMG servicios/Tapizado.png" alt="Tapizado" style="height:150px;">
+                <img src="Atencion al Cliente Fotos/IMG servicios/Alfombras.png" alt="Alfombras" style="height:150px;">
+                <img src="Atencion al Cliente Fotos/IMG servicios/Cubiertas.png" alt="Cubiertas" style="height:150px;">
+               
             </div>
 
                 
